@@ -1,6 +1,6 @@
 {
-  "workbench.colorTheme": "Night Owl Light (No Italics)",
-  "files.associations": {
-    "*.js": "javascript"
-  }
+    "workbench.colorTheme": "Night Owl (No Italics)",
+    "files.associations": {
+        "*.js": "javascript"
+    }
 }
