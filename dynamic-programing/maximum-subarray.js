@@ -15,6 +15,11 @@
  * Solution:
  * DP (Dynamic Programing)
  * 從頭開始加，當總和比加的該項還小的時候就換成該項的值，一直到最後將加過的值裡面最大的記住即是答案。
+ *
+ * Reference:
+ * https://hannahpun.gitbook.io/leetcode-note/math/53-maximum-subarray
+ * https://knightzone.studio/2019/04/16/4282/leetcode%EF%BC%9A53-maximum-subarray/
+ *
  * @param {number[]} nums
  * @return {number}
  */
