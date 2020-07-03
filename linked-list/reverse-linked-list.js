@@ -12,6 +12,8 @@
  *   A linked list can be reversed either iteratively or recursively. Could you implement both?
  */
 
+const { print } = require('../utils')
+
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -19,22 +21,9 @@
  *     this.next = null;
  * }
  */
-
 function ListNode(val) {
     this.val = val
     this.next = null
-}
-
-const print = (result) => {
-    let r = []
-
-    while (result) {
-        r.push(result.val)
-
-        result = result.next
-    }
-
-    console.log(r.join(','))
 }
 
 /**
