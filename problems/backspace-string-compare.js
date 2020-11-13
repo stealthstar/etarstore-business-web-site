@@ -61,6 +61,8 @@ Can you solve it in O(N) time and O(1) space?
  * @return {boolean}
  */
 var backspaceCompare = function (S, T) {
+    // 雙指針解
+    // 可節省儲存空間
     // let i = S.length - 1
     // let j = T.length - 1
 
@@ -103,6 +105,7 @@ var backspaceCompare = function (S, T) {
 
     /**
      * Stack
+     * 簡單可是會消耗較多儲存空間
      */
     let s = []
     let t = []
