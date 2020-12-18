@@ -46,7 +46,6 @@ Output: 5
 var minDepth = function (root) {
     if (!root) return 0
 
-
     if (!root.left) {
         console.log('left ' + root.val)
         return 1 + minDepth(root.right)
