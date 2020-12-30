@@ -38,6 +38,7 @@ All Node.val are unique.
  * @return {number}
  */
 var rangeSumBST = function (root, low, high) {
+    //
     // let result = 0
 
     // const dfs = function (r) {
@@ -54,6 +55,8 @@ var rangeSumBST = function (root, low, high) {
     // }
 
     // dfs(root)
+
+    // 精簡自我調用版
     if (!root) {
         return 0
     }
