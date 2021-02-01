@@ -30,7 +30,7 @@ Please do not use the built-in HashMap library.
  * Initialize your data structure here.
  */
 var MyHashMap = function () {
-    this.memory = {}
+    this.memory = []
 }
 
 /**
@@ -65,7 +65,7 @@ MyHashMap.prototype.remove = function (key) {
 }
 
 MyHashMap.prototype.hasKey = function (key) {
-    return this.memory[key] !== null && this.memory[key] !== undefined
+    return this.memory[key] !== undefined
 }
 
 MyHashMap.prototype.getAll = function () {
