@@ -32,39 +32,53 @@ words[i] consists of English letters (both lowercase and uppercase).
  * @return {string[]}
  */
 
-let map = {}
+// let map = {}
 let keyboardRows = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm']
 
-for (let i = 0; i < keyboardRows.length; i++) {
-    for (let j = 0; j < keyboardRows[i].length; j++) {
-        map[keyboardRows[i][j].toUpperCase()] = i
-        map[keyboardRows[i][j].toLowerCase()] = i
-    }
-}
+// for (let i = 0; i < keyboardRows.length; i++) {
+//     for (let j = 0; j < keyboardRows[i].length; j++) {
+//         map[keyboardRows[i][j].toUpperCase()] = i
+//         map[keyboardRows[i][j].toLowerCase()] = i
+//     }
+// }
 
 var findWords = function (words) {
     let result = []
 
     for (let i = 0; i < words.length; i++) {
-        let prevRow = -1
-        let isAnswer = true
+        // let prevRow = -1
+        // let isAnswer = true
+
+        // for (let j = 0; j < words[i].length; j++) {
+        //     let row = map[words[i][j]]
+
+        //     if (prevRow === -1) {
+        //         prevRow = row
+        //     }
+
+        //     if (prevRow !== -1 && prevRow !== row) {
+        //         isAnswer = false
+        //         break
+        //     }
+
+        //     prevRow = row
+        // }
+
+        // if (isAnswer) {
+        //     result.push(words[i])
+        // }
+
+        let one = 0
+        let two = 0
+        let three = 0
 
         for (let j = 0; j < words[i].length; j++) {
-            let row = map[words[i][j]]
-
-            if (prevRow === -1) {
-                prevRow = row
-            }
-
-            if (prevRow !== -1 && prevRow !== row) {
-                isAnswer = false
-                break
-            }
-
-            prevRow = row
+            if (keyboardRows[0].includes(words[i][j])) one = 1
+            if (keyboardRows[1].includes(words[i][j])) two = 1
+            if (keyboardRows[2].includes(words[i][j])) three = 1
         }
 
-        if (isAnswer) {
+        if (one + two + three === 1) {
             result.push(words[i])
         }
     }
