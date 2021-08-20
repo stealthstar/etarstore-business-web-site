@@ -2,5 +2,8 @@
     "workbench.colorTheme": "Night Owl (No Italics)",
     "files.associations": {
         "*.js": "javascript"
+    },
+    "material-icon-theme.files.associations": {
+        "*.js": "Javascript"
     }
 }
