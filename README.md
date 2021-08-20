@@ -87,3 +87,18 @@ const backtracking = (result, left, right) => {
 1. 對序列做一些操作，例如過濾、刪除符合特定條件的數值
 2. 不可以使用額外的陣列、只能對給定的陣列進行修改
 3. 資料已經依照大小排序過
+
+---
+
+## Binary Tree Traversal
+
+pre-, in-, post-是指parent node相對於child node的順序。假設binary search tree如下：
+
+    4
+   / \
+  2   6
+ / \ / \
+1  3 5  7
+preorder: 中->左->右，4213657
+inorder: 左->中->右，1234567 (對binary search tree做inorder traversal就是依序拿取)
+postorder: 左->右->中，1325764
