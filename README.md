@@ -48,6 +48,8 @@ const backtracking = (result, left, right) => {
 }
 ```
 
+![](./img/backtracking.png)
+
 ### References
 
 -   [算法——回溯（backtracking)](https://zhuanlan.zhihu.com/p/73799959)
@@ -102,3 +104,7 @@ pre-, in-, post-是指parent node相對於child node的順序。假設binary sea
 preorder: 中->左->右，4213657
 inorder: 左->中->右，1234567 (對binary search tree做inorder traversal就是依序拿取)
 postorder: 左->右->中，1325764
+
+## 時間複雜度計算教學
+
+https://ithelp.ithome.com.tw/articles/10203082
