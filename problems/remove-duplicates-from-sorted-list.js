@@ -35,27 +35,6 @@ var deleteDuplicates = function (head) {
     return current
 }
 
-var solution2 = function (head) {
-    if (!head) {
-        return head
-    }
-
-    let result = new ListNode(head.val)
-    let current = result
-
-    while (head) {
-        if (head.val !== current.val) {
-            const newNode = new ListNode(head.val)
-            current.next = newNode
-            current = newNode
-        }
-
-        head = head.next
-    }
-
-    return result
-}
-
 const n1 = new ListNode(1)
 const n2 = new ListNode(2)
 const n3 = new ListNode(3)
