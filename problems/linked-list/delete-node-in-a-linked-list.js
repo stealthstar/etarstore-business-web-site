@@ -44,7 +44,7 @@ The node to be deleted is in the list and is not a tail node
  * @return {void} Do not return anything, modify node in-place instead.
  */
 
-const { print } = require('../utils')
+const { print } = require('../../utils')
 
 var deleteNode = function (node) {
     node.val = node.next.val

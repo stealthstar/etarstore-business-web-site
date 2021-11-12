@@ -13,7 +13,7 @@
  *   A linked list can be reversed either iteratively or recursively. Could you implement both?
  */
 
-const { print } = require('../utils')
+const { print } = require('../../utils')
 
 /**
  * Definition for singly-linked list.

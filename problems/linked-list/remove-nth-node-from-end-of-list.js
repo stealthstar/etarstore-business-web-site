@@ -1,4 +1,4 @@
-const { print } = require('../utils')
+const { print } = require('../../utils')
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {

@@ -69,8 +69,7 @@ var inorderTraversal = function (root) {
         if (curr) {
             stack.push(curr)
             curr = curr.left
-        }
-        else {
+        } else {
             curr = stack.pop()
             result.push(curr.val)
             curr = curr.right
@@ -95,7 +94,11 @@ function TreeNode(val, left, right) {
 
 console.log(
     inorderTraversal(
-        new TreeNode(1, undefined, new TreeNode(2, new TreeNode(4, undefined, new TreeNode(3))))
+        new TreeNode(
+            1,
+            undefined,
+            new TreeNode(2, new TreeNode(4, undefined, new TreeNode(3)))
+        )
     )
 )
 
@@ -109,6 +112,26 @@ console.log(
             4,
             new TreeNode(2, new TreeNode(1), new TreeNode(3)),
             new TreeNode(6, new TreeNode(5), new TreeNode(7))
+        )
+    )
+)
+
+console.log(
+    inorderTraversal(
+        new TreeNode(
+            5,
+            new TreeNode(4),
+            new TreeNode(6, new TreeNode(3), new TreeNode(7))
+        )
+    )
+)
+
+console.log(
+    inorderTraversal(
+        new TreeNode(
+            5,
+            new TreeNode(1, null, new TreeNode(4, new TreeNode(3))),
+            new TreeNode(6)
         )
     )
 )

@@ -1,4 +1,4 @@
-const { print } = require('../utils')
+const { print } = require('../../utils')
 /**
  * #Linked-list
  * 83. Remove Duplicates from Sorted List
