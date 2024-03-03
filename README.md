@@ -8,8 +8,6 @@ This site designed depends on bellow essentiality
 - Intuitive navigation: Make sure that navigation menus are easy to find and use. Users should be able to easily locate the information they are looking for without getting lost in the website.
 - Responsive design: A good website should be responsive and mobile-friendly to ensure a seamless user experience across all devices.
 
-![image](https://github.com/stealthstar/etarstore/assets/161687817/be854d59-7f64-458e-899f-dfd95453d2dc)
-
 ![image](https://github.com/stealthstar/etarstore/assets/161687817/8adafafa-6a41-415d-a625-50e0e7304387)
 
 ![image](https://github.com/stealthstar/etarstore/assets/161687817/7d1e504f-0d2d-45ba-8433-854c79609bba)
